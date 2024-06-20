@@ -1,0 +1,794 @@
+@charset "utf-8";
+
+/*
+Theme Name: Moreau
+Author: Diego Maia
+Author URI: www.diegomaia.dev
+Description: Tema desenvolvido para o site "Moreau"
+Version: 1.0
+*/
+
+/* Containers */
+
+.container {
+	max-width: 1065px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.subcontainer {
+	max-width: 1185px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Media Query´s */
+
+@media only screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.subcontainer {
+		max-width: 760px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 769px) {
+	.container {
+		max-width: 720px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.subcontainer {
+		max-width: 720px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.container {
+		width: auto;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+
+	.subcontainer {
+		width: 92%;
+		margin: 0 auto;
+		padding: 0 16px;
+	}
+}
+
+/* Body */
+
+body {
+	margin: 0px;
+	padding: 0px;
+
+		overflow-y: scroll; /* Mantém a barra de rolagem vertical */
+		/* overflow-x: hidden; */ /* Oculta a barra de rolagem horizontal */
+	
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Define as margens padrão para títulos e parágrafos */
+h1, h2, h3, p {
+	margin: 0px;
+}
+
+/* Remove as margens e os preenchimentos padrão de listas */
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+/* Garante que as imagens não ultrapassem a largura do seu contêiner pai */
+img {
+	max-width: 100%;
+
+}
+
+/*-------------------------------------------------------------- Header -------------------------------------------*/
+
+.header .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0;
+}
+
+.header {
+	background-color: #F2F2F0;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	/* Alinha os elementos no header horizontalmente */
+	align-items: center;
+	/* Centraliza verticalmente os elementos */
+	padding: 0 20px;
+	/* Espaçamento interno do header */
+}
+
+.logo-menu {
+	height: 50px;
+	margin-left: -30px;
+}
+
+/* Estilos para Submenus */
+.menu {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	/* Espaço acima do menu */
+	font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.menu ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	margin-right: 20px;
+	padding: 0;
+}
+
+.menu ul li {
+	position: relative;
+	margin-right: 20px;
+}
+
+.menu ul li a {
+	color: #002041;
+	text-decoration: none;
+	display: block;
+	transition: background-color 0.3s ease;
+}
+
+.menu ul li:hover>.submenu {
+	display: block;
+}
+
+.submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #FFFFFF;
+	display: none;
+	z-index: 1000;
+	min-width: 200px;
+	/* Largura mínima dos submenus */
+}
+
+.submenu li {
+	display: block;
+}
+
+.submenu li a {
+	color: #476483;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	transition: background-color 0.3s ease;
+}
+
+.submenu li a:hover {
+	color: #476483;
+	background-color: #FFFFFF;
+}
+
+.arrow-down {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 5px;
+	vertical-align: middle;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #002041;
+}
+
+.menu>ul {
+	list-style-type: none;
+}
+
+.submenu-item>.submenu {
+	display: none;
+}
+
+.submenu-item:hover>.submenu {
+	display: block;
+}
+
+.gtranslate_wrapper {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.gtranslate_wrapper a {
+	padding: 3px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.ilustracaoheader {
+	margin-right: -60px;
+}
+/*-------------------------------------------------------- bloco-1 -------------------------*/
+
+.bloco-1 {
+	padding: 20px;
+	background-color: #002041;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.conteudo-principal {
+	display: flex;
+	align-items: center;
+	margin-top: 80px;
+}
+
+.conteudo-principal img {
+	margin-right: 150px;
+}
+
+.texto-principal {
+	color: #F2F2F0;
+	margin-bottom: 20px;
+}
+
+.texto-principal h1 {
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 200;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.texto-principal p {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	margin-bottom: 15px;
+	font-size: 14px;
+	text-align: left;
+}
+
+/* Define a animação fade-in */
+@keyframes fade-in {
+    from {
+        opacity: 0; /* Começa completamente transparente */
+        transform: translateY(-20px); /* Move para cima */
+    }
+    to {
+        opacity: 1; /* Termina completamente visível */
+        transform: translateY(0); /* Volta para a posição normal */
+    }
+}
+
+/* Aplica a animação ao elemento */
+.conteudo-principal {
+    animation: fade-in 1s ease forwards; /* Duração, easing e mantém estado final */
+}
+
+/*--------------------------------------------- Bloco 2 --------------------*/
+
+.bloco-2 {
+	height: 135px;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.carrossel {
+    position: relative;
+    overflow: visible;
+    margin-top: 40px;
+}
+
+.carrossel-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrossel-item {
+    flex: 0 0 auto;  /* Itens não crescem nem encolhem, têm tamanho fixo */
+    width: 100px;    /* Largura fixa dos itens do carrossel */
+    height: auto;    /* Altura automática para manter a proporção da imagem */
+}
+
+.carrossel-item img {
+    max-width: 100%;
+	width: 60px;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+
+}
+
+.carrossel-prev,
+.carrossel-next {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.0);
+    color: black;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-size: 50px;
+	z-index: 100;
+}
+
+.carrossel-prev:hover,
+.carrossel-next:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.carrossel-prev {
+    left: -70px;
+}
+
+.carrossel-next {
+    right: -60px;
+}
+
+.carrossel-prev,
+.carrossel-next {
+  border-width: 2px; /* Espessura da borda em pixels */
+  font-weight: normal;
+}
+
+/*---------------------------------------------------------------------------- Bloco-3 -----------------------------------------------------------------------*/
+
+.bloco-3 {
+    background-color: #F2F2F0;
+    padding: 120px;
+}
+
+.bloco-3-content {
+    display: flex;
+    justify-content: center;
+}
+
+.caixas-bloco-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+	height: 480px;
+}
+
+.caixas-bloco-3 > div {
+	flex: 1;
+    min-width: 250px; /* Largura mínima para cada caixa */
+    max-width: 300px; /* Largura máxima para cada caixa */
+    text-align: center;
+    margin: 0 auto; /* Centraliza a caixa dentro do espaço flex */
+    display: flex;
+    flex-direction: column; /* Garante que o conteúdo dentro da caixa seja empilhado verticalmente */
+    justify-content: space-between; /* Distribui o espaço verticalmente */
+    height: 100%; /* Define a altura para ocupar o máximo possível */
+    box-sizing: border-box; /* Inclui padding e border na altura total */
+}
+
+.caixas-bloco-3 img {
+	max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px; 
+    box-sizing: border-box; /* Inclui o padding na largura total da imagem */
+	transition: transform 0.3s ease;
+}
+
+.caixas-bloco-3 h5 {
+    font-size: 29px;
+    margin-bottom: 10px;
+	color: #F2F2F0;
+	font-family: 'Playfair Display', sans-serif;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+.caixas-bloco-3 p {
+	flex-grow: 1;
+    font-size: 14px;
+    color: #F2F2F0;
+	font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+	padding: 0 30px 0 30px;
+	text-align: left;
+	margin-top: 10px;
+	/* margin: 0 10px 20px; */ /* Margem interna para dar espaço ao texto dentro da caixa */
+}
+
+.caixa-1 {
+	width: 333px;
+	height: 486px;
+	background-color: #002041;
+}
+
+.caixa-1 img {
+	padding: 10px;
+}
+
+.caixa-2 {
+	background-color: #002041;
+}
+
+.caixa-3 {
+	background-color: #002041;
+}
+
+.texto-caixa-1,
+.texto-caixa-2,
+.texto-caixa-3 {
+    flex-grow: 1; /* Permite que o texto cresça para preencher o espaço disponível */
+    display: flex;
+    flex-direction: column; /* Garante que o conteúdo dentro do texto seja empilhado verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo no início verticalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.caixas-bloco-3 > div:hover {
+    background-color: #476483; /* Cor de fundo ao passar o mouse */
+}
+/* ----------------------------------bloco-4 ------------------------------------------------------------------------- */
+.bloco-4 {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bloco-4-content {
+	width: auto; /* Ajuste a largura conforme necessário */
+	display: flex;
+	justify-content: center; /* Centraliza os itens na direção principal (horizontal) */
+	align-items: center; /* Centraliza os itens na direção cruzada (vertical) */
+}
+
+.bloco-4-content h3 {
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 30px;	
+	margin-right: 220px; /* Adiciona espaço entre o <h3> e os logos */
+	width: 280px;
+}
+
+.logos-bloco-4 {
+	display: flex;
+	justify-content: center; /* Centraliza os logos horizontalmente */
+	gap: 20px; /* Adiciona espaço entre os logos */
+}
+
+
+/* --------------------------------------bloco-5------------------------------------------------------------------------------- */
+
+.bloco-5 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F0;
+}
+
+.bloco-5 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloco-5-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+}
+
+.bloco-5-content h3 {
+    margin-bottom: 20px; /* Adicionar espaço abaixo do h3 */
+}
+
+.links-bloco-5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+.links-bloco-5 img {
+    margin-right: 10px; /* Espaçamento entre os ícones */
+    background-color: #002041; /* Cor de fundo inicial */
+    padding: 10px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Ajuste conforme necessário */
+    transition: background-color 0.3s; /* Suavizar a transição da cor de fundo */
+}
+
+.links-bloco-5 img:hover {
+    background-color: #476483; /* Cor de fundo ao passar o mouse */
+}
+
+.ilustracao-bloco-5 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* -------------------------------------------------------bloco-6--------------------------------------------------------------- */
+
+.bloco-6 {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	padding: 30px;
+	background-color: #002041;
+}
+
+.bloco-6 .container {
+	width: 100%;
+}
+
+.bloco-6-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.imagem-banner-bloco-6 img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner-bloco-6 h2 {
+	color: white;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	padding-right: 140px;
+}
+
+/* -------------------------------------------------bloco-7-------------------------------------------------------------------- */
+
+.bloco-7 {
+	padding: 20px;
+}
+
+.bloco-7 .container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.bloco-7-content {
+	display: flex;
+	flex-direction: column;
+	gap: 90px;
+	padding-left: 80px;
+}
+
+.crono-1 {
+	display: flex;
+	align-items: flex-start;
+	padding-top: 100px;
+}
+
+.crono-1 .data {
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Espaço abaixo da data */
+}
+
+.texto h2 {
+    font-size: 30px;
+    margin: 5px 0 10px 0; /* Espaço entre o título e o texto */
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 200;
+	width: 500px;
+	padding-left: 150px;
+}
+
+.texto p {
+    margin: 0;
+    line-height: 1.5;
+	font-family: 'Playfair Display', sans-serif;
+	width: 500px;
+	padding-left: 150px;
+}
+
+
+
+/* ----------------------------------------------------bloco 8 ------------------------------------------------------------------------------------------ */
+
+.bloco-8 .container {
+    width: 100%;
+    max-width: none; /* Remover a largura máxima */
+    padding: 0; /* Remover qualquer padding que limite a largura */
+}
+
+.bloco-8-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002041;
+    width: 100%;
+	margin-bottom: 120px;
+}
+
+.imagem-banner-bloco-8 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+	padding-left: 190px;
+}
+
+.banner-bloco-8 h2 {
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    padding-right: 140px;
+}
+
+
+/* -----------------------------------------------------------------bloco-9---------------------------------------------------- */
+
+.bloco-9 {
+  margin-bottom: 120px;
+}
+
+.box-advogados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;	
+	margin-right: 200px;
+	align-items: center;
+	margin-left: 202px;
+}
+
+.advogado-item {
+    width: 230px;
+    height: auto;
+	padding: 10px;
+    background-color: #002041;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+	margin: 0px; /* Centraliza os itens */
+	box-sizing: border-box;
+}
+
+.advogado-item img {
+    width: 100%; /* Ajuste automático baseado na coluna */
+    max-width: 232.87px;
+    height: auto; /* Ajuste automático baseado na largura */
+    margin-bottom: 10px;
+}
+
+.advogado-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+	font-family: 'Playfair Display', sans-serif;
+}
+
+
+
+/*-------------------------------------------------------------- Footer ---------------------------------------------------------*/
+
+.footer {
+	width: 1300px;
+	height: 320px;
+    background-color: #002041;
+    color: #ffffff;
+}
+
+.footer-content {
+	display: flex;
+    justify-content: space-between; /* Posiciona os elementos lado a lado */
+    align-items: center;
+    width: 100%; /* Ajuste a largura conforme necessário */
+}
+
+.logo-footer {
+    flex: 1 1 auto; /* Ocupa o espaço necessário */
+    margin-bottom: 20px; /* Espaçamento inferior opcional */
+}
+
+.textos-footer {
+    margin-bottom: 20px; /* Espaçamento inferior opcional */
+	font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+	margin-top: 100px;
+}
+
+.textos-footer img {
+	
+}
+
+.newsletter-footer h3 {
+	font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	padding-left: 50px;
+	padding-top: 80px;
+	margin-bottom: 20px;
+}
+
+.newsletter-footer p {
+	font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-left: 50px;
+	margin-bottom: 40px;
+}
+
+.newsletter-footer form {
+	padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.newsletter-footer input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-footer input[type="email"]:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.newsletter-footer input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #002041;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.newsletter-footer input[type="submit"]:hover {
+    background-color: #f2f2f0;
+    color: #002041;
+}
+
+.imagem-footer {
+	width: 300px;
+    margin-top: 100px;
+    padding-left: 60px;
+}
