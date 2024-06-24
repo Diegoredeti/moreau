@@ -20,61 +20,61 @@
                 <div class="container">
                     <div class="box-advogados">
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=1'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe1N.jpg" alt="Pierre Moreau">
                                 <p>Pierre Moreau</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=2'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe5NN.jpg" alt="Juliana Zanotto">
                                 <p>Juliana Zanotto</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=3'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe20nN.jpg" alt="Renato Xavier da Silveira Rosa">
                                 <p>Renato Xavier da Silveira</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=4'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe7N.jpg" alt="Jean Pierre Moreau">
                                 <p>Jean Pierre Moreau</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=5'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe19Nn.jpg" alt="Felipe Henrique Lopes">
                                 <p>Felipe Henrique Lopes</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=6'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe23N.jpg" alt="Arthur Camargo">
                                 <p>Arthur Camargo</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=7'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe16N.jpg" alt="Jairo Saddi">
                                 <p>Jairo Saddi</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=8'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe15N.jpg" alt="Sofia Ribeiro">
                                 <p>Sofia Ribeiro</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=9'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe18N.jpg" alt="Bianca Longo">
                                 <p>Bianca Longo</p>
                             </a>
                         </div>
                         <div class="advogado-item">
-                            <a href="<?php echo esc_url(get_permalink()) . '?advogado_id=10'; ?>">
+                            <a href="http://moreau-local.local/advogado/">
                                 <img src="http://moreau-local.local/wp-content/uploads/2024/06/equipe6N2.jpg" alt="Gabriela Cardoso">
                                 <p>Gabriela Cardoso</p>
                             </a>
@@ -88,3 +88,17 @@
 </main>
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
