@@ -2,8 +2,8 @@
 
 /* /*
 Theme Name: Moreau
-Author: Diego Maia
-Author URI: www.diegomaia.dev
+Author: Diego AP Comunica
+Author URI:
 Description: Tema desenvolvido para o site "Moreau"
 Version: 1.0
 */
@@ -111,6 +111,7 @@ img {
 	justify-content: space-between;
 	height: 100%;
 	padding: 0;
+	box-shadow: ;
 }
 
 .header {
